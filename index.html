@@ -55,30 +55,26 @@
       </div>
     </div>
 
+   
+   
     <div class="row">
       <div class="column1" class="building-accessibility1">
         <h2>✔️ Outside the building</h2>
+        <h3> Click on 🔴 to see the CHEC list! </h3>
         <div class="container">
           <img
             src="src/building-topdown.jpeg"
             alt="top-down building"
             width="600"
           />
-          <button
-            class="btn"
-            id="btn1"
-            onclick="accessClick(parkingLot)"
-          ></button>
-          <button
-            class="btn"
-            id="btn2"
-            onclick="accessClick(entrance)"
-          ></button>
+          <button class="btn" id="btn1" onclick="accessClick(parkingLot)"></button>
+          <button class="btn" id="btn2" onclick="accessClick(entrance)"></button>
+          <button class="btn" id="btn23" onclick="accessClick(dropoff)"></button>
         </div>
       </div>
       <div class="column2" id="col2">
         <div class="hidden2" id="parkingLot">
-          <h3>Parking/Curb CHEC list</h3>
+          <h3>Parking/Curb</h3>
           <li>
             Parking spaces closest to the building are designated accessible by
             a sign.
@@ -102,7 +98,7 @@
           </li>
         </div>
         <div class="hidden2" id="entrance">
-          <h3>Entrance CHEC list</h3>
+          <h3>Entrance </h3>
           <li>
             All entrances with stairs have signs posted to indicate location of
             nearest accessible entrance.
@@ -139,22 +135,136 @@
             without interference.</li>
           
         </div>
+        <div class="hidden2" id="dropoff">
+            <h3>Drop-off</h3>
+            <li>
+                Drop-off areas (cars, Paratransit, or Taxi) are as close as possible to the 
+                accessible route to entrance.
+            </li>
+        </div>
       </div>
     </div>
+
+    <hr style="opacity: 0;">
 
     <div class="row">
         <div class="column1" class="building-accessibility2">
             <h2>✔️ Inside the building</h2>
+            <h3> Click on 🔴 to see the CHEC list! </h3>
             <div class="container">
                 <img src="src/interior-topdown.jpeg" width="600" />
                 <button class="btn" id="btn3" onclick="accessClick2(interiorDoor)"></button>
+                <button class="btn" id="btn4" onclick="accessClick2(restroom)"></button>
+                <button class="btn" id="btn5" onclick="accessClick2(counter)"></button>
+                <button class="btn" id="btn6" onclick="accessClick2(hall)"></button>
             </div>
         </div>
         <div class="column2" id="col2">
             <div class="hidden2" id="interiorDoor"> 
-                <h3> Interior Door CHEC List</h3>
+                <h3> Interior Door </h3>
+                <li>
+                    There is a clear space at least 18 inches wide next to the handle side of the 
+                    door. The space is clear of obstacles or debris (e.g., trash cans, ashtrays, 
+                    etc.)
+                </li>
+                <li>
+                    Interior doors can be opened using the strength of only 2 fingers (5 lbs of force or less)
+                </li>
+                <li>
+                    The doorway measures at least 32” inches wide.
+                </li>
+            </div>
+            <div class="hidden2" id="restroom"> 
+                <h3> Restroom </h3>
+                <li>
+                    Entrance and stall doors can be opened in both directions using the 
+                    strength of only 2 fingers (5 lbs of force or less) OR all doors needed to 
+                    access bathroom are automatic and open without interference.
+                </li>
+                <li>
+                    Handles/latches on bathroom doors (entrance and stall doors) are located 
+                    no higher 48 inches from floor
+                </li>
+                <li>
+                    Entrance and stall doorways measure at least 32 inches wide.
+                </li>
+                <li>
+                    There is at least a 5-foot circular space to access the sink/soap/dryer features. 
+                </li>
+                <li>
+                    There is a stall measuring at least 36 inches wide and 69 inches deep OR 
+                    if there are no stalls (i.e., a single restroom) the whole restroom area 
+                    provides a 5-foot circular space.
+                </li>
+                <li>
+                    Grab bars are mounted on two sidewalls close to the toilet. 
+                </li>
+                <li>
+                    There is clear space under the sink for knee clearance (i.e., not a vanity 
+                    style) and the bottom of the sink (excluding pipes) measures at least 29 
+                    inches from the floor.
+                </li>
+                <li>
+                    Sink rim is no more than 34 inches above the floor and all features 
+                    (faucets, hand dryers, dispensers) are no more than 54 inches from the 
+                    floor and can be operated with a closed fist.
+                </li>
+                <li>
+                    A family or unisex restroom is provided meeting all of the following 
+                    features: on a level surface (same level as area of business), doorway is at 
+                    least 32 inches wide, space is at least 36 inches by 69 inches.
+                </li>
+                <li>
+                    All features (pathways, elevators, bathrooms, etc.) of the building are 
+                    accessible, or there are signs to indicate where accessible alternatives are 
+                    located.
+                </li>
+            </div>
+            <div class="hidden2" id="counter">
+                <h3>Counter (bars, reception desks, deli/ meat counter..) </h3>
+                <li>
+                    A portion of all counters measures no more than 36 inches from the floor 
+                    OR there is space at the side for passing items to customers.
+                </li>
+                <li>
+                    Seating arrangements (e.g., waiting room, classroom, sporting venue) 
+                    allow a person with a mobility device to remain in line with other seats (i.e., 
+                    not sticking out in the aisle.) 
+                </li>
+                <li>
+                    Table seating arrangements (e.g., restaurant/picnic areas) provide one or 
+                    more spaces with removable chairs AND the space measures at least 27 
+                    inches high, 19 inches deep, and 30 inches wide.
+                </li>
+            </div>
+            <div class="hidden2" id="hall">
+                <h3> Pathways (halls, aisles, etc.)</h3>
+                <li>
+                    All public pathways (halls, aisles, etc.) and spaces within the facility are at least 36 inches wide. 
+                </li>
+                <li>
+                    All halls and aisles have spaces wide enough to allow a person in a 
+                    mobility device to turn around without going backward: a 5-foot circular 
+                    space OR a T-shaped space (an intersection of 2 aisles) 
+                </li>
+                <li>
+                    Public spaces and pathways to access materials and services are clear 
+                    and unobstructed by chairs, displays, or merchandise. 
+                </li>
+                <li>
+                    Public spaces and pathways to access materials and services are clear 
+                    and unobstructed by overcrowding of people. 
+                </li>
+                <li>
+                    The floor surface is free from clutter or debris. 
+                </li>
+                <li>
+                    The floor surface is smooth (no bumpy, worn, or loose elements) and 
+                    carpeting, if present, is low-pile, tightly woven, and securely attached.  
+                </li>
             </div>
         </div>
+
     </div>
   </body>
 
@@ -179,12 +289,15 @@
 
     function accessClick(id) {
       console.log(id);
-      // var x = document.getElementById(id);
       var x = document.getElementById("parkingLot");
       var y = document.getElementById("entrance");
+      var a = document.getElementById("dropoff");
+      
+
       x.style.display = "none";
       y.style.display = "none";
-
+      a.style.display = "none";
+      
       if (id.style.display === "block") {
         id.style.display = "none";
       } else {
@@ -193,11 +306,14 @@
     }
 
     function accessClick2(id) {
-      console.log(id);
-      // var x = document.getElementById(id);
       var x = document.getElementById("interiorDoor");
+      var y = document.getElementById("restroom");
+      var z = document.getElementById("hall");
+      var a = document.getElementById("counter");
       x.style.display = "none";
-    //   y.style.display = "none";
+      y.style.display = "none";
+      z.style.display = "none";
+      a.style.display = "none";
 
       if (id.style.display === "block") {
         id.style.display = "none";
