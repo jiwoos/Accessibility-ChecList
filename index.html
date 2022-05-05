@@ -1,69 +1,209 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset = "UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=VT323&display=swap" rel="stylesheet">
-        <Title> Accessibility </Title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&family=Roboto:wght@300;400&family=Shrikhand&family=VT323&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Accessibility</title>
+  </head>
 
-    <body>
-        <header>
-            <h1 class="header" style="display:inline"> Is this building </h1> <h2 style="text-decoration: line-through; display:inline"> Accessible </h2>  <h1 style="display:inline"> Usable? </h1> 
-        </header>
-        <div class="info">
-            <h2 style="display:inline"> What is CHECs?</h2>
-            <button id= "myButton1" style="display:inline" onclick="showDIV(1)"> more </button>
-            <div class="hidden" id="1">
-                <p> Measuring the Usability of 
-                    Community Buildings with 
-                    the <strong> 'Community Health 
-                    Environment Checklists' </strong> </p>
-                <p> It is an assessment that objectively measures usability and receptivity of public spaces for people who have disabilities and older adults. </p>
-                <p style="display:inline"> Accessibility describes the physical environment, but </p>
-                <p style="display:inline"> Usability describes how an individual interacts with his or her environment. </p> 
-                <p> A building may be accessible, but is it really usable by all? </p>
-    
-                <iframe width="560" height="340" src="https://www.youtube.com/embed/2vJHjBIxS2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-            </div>
-        </div> 
-        <hr>
-        <div class="building-accessibility1">
-            <h2> ✔️ Outside the building </h2> 
+  <body>
+    <header>
+      <h1 class="header" style="display: inline">CHECs. For All-</h1>
+    </header>
+
+    <div class="info">
+      <h2 style="display: inline">What is CHECs?</h2>
+      <button id="myButton1" style="display: inline" onclick="showDIV(1)">
+        more
+      </button>
+      <div class="hidden" id="1">
+        <div class="center">
+          <p>
+            Measuring the Usability of Community Buildings with the
+            <strong> 'Community Health Environment Checklists' </strong>
+          </p>
+          <p>
+            It is an assessment that objectively measures usability and
+            receptivity of public spaces for people who have disabilities and
+            older adults.
+          </p>
+          <p style="display: inline">
+            Accessibility describes the physical environment, but
+          </p>
+          <p style="display: inline">
+            Usability describes how an individual interacts with his or her
+            environment.
+          </p>
+          <p>A building may be accessible, but is it really usable by all?</p>
+
+          <iframe
+            width="560"
+            height="340"
+            src="https://www.youtube.com/embed/2vJHjBIxS2s"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column1" class="building-accessibility1">
+        <h2>✔️ Outside the building</h2>
+        <div class="container">
+          <img
+            src="src/building-topdown.jpeg"
+            alt="top-down building"
+            width="600"
+          />
+          <button
+            class="btn"
+            id="btn1"
+            onclick="accessClick(parkingLot)"
+          ></button>
+          <button
+            class="btn"
+            id="btn2"
+            onclick="accessClick(entrance)"
+          ></button>
+        </div>
+      </div>
+      <div class="column2" id="col2">
+        <div class="hidden2" id="parkingLot">
+          <h3>Parking/Curb CHEC list</h3>
+          <li>
+            Parking spaces closest to the building are designated accessible by
+            a sign.
+          </li>
+          <li>
+            At least one of the marked accessible spaces measures a total width
+            of 16 feet (parking space and access aisle).
+          </li>
+          <li>
+            Curb cuts are present at all curbs/level changes on the route to the
+            accessible entrance (i.e., at driveways, parking lots, and any other
+            drop-off areas)
+          </li>
+          <li>
+            All curb cuts measure no more than ¼ inch rise onto sidewalk and
+            street.
+          </li>
+          <li>
+            Curb cuts are free of obstacles or barriers (e.g., parked car, leaf
+            pile, newspaper box).
+          </li>
+        </div>
+        <div class="hidden2" id="entrance">
+          <h3>Entrance CHEC list</h3>
+          <li>
+            All entrances with stairs have signs posted to indicate location of
+            nearest accessible entrance.
+          </li>
+          <li>
+            At least one entrance is level with pathway (no curbs/steps) OR has
+            a ramp or working lift.
+          </li>
+          <li>
+            The route to the accessible entrance is free of loose gravel, large
+            cracks, debris, and uneven pavement.
+          </li>
+          <li>
+            The route (excluding ramps) is relatively flat (a slope of 1:20 or less). 
+          </li>
+          <li>
+            The width of the route is about 36 inches wide. 
+          </li>
+          <h4> If there's a doorway, </h4>
+          <li>
+            There is a clear space at least 18 inches wide next to the handle side of the 
+            door. The space is clear of obstacles or debris (e.g., trash cans, ashtrays, 
+            etc.)
+          </li>
+          <li>
+            The entrance door can be opened using the strength of only 2 fingers (5 
+            lbs of force or less)
+          </li>
+          <li>
+            The doorway measures at least 32 inches wide.
+          </li>
+          <li> <strong> If the door is automatic, </strong>The control button for the automatic door is on the latch side of the door 
+            (side with handle) OR is otherwise positioned so that the door may open 
+            without interference.</li>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="column1" class="building-accessibility2">
+            <h2>✔️ Inside the building</h2>
             <div class="container">
-                <img src="src/building-topdown.jpeg" alt="top-down building" width="600" />
-                <button class="btn"></button>
+                <img src="src/interior-topdown.jpeg" width="600" />
+                <button class="btn" id="btn3" onclick="accessClick2(interiorDoor)"></button>
             </div>
-            
         </div>
-
-        <div class="building-accessibility2">
-            <h2> ✔️ Inside the building </h2> 
-            <img src="src/interior-topdown.jpeg" width="600"/>
+        <div class="column2" id="col2">
+            <div class="hidden2" id="interiorDoor"> 
+                <h3> Interior Door CHEC List</h3>
+            </div>
         </div>
-    </body>
+    </div>
+  </body>
 
-    <script>
-        function showDIV(id) {
-        var x = document.getElementById(id);
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+  <script>
+    function showDIV(id) {
+      var x = document.getElementById(id);
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
 
-            var elem = document.getElementById("myButton" + id);
-            if (elem.value=="less") {
-                elem.value = "more";
-                elem.innerHTML = "more";
-            }
-            else {
-                elem.value = "less";
-                elem.innerHTML = "less"
-            }
-        }
-    </script>
+      var elem = document.getElementById("myButton" + id);
+      if (elem.value == "less") {
+        elem.value = "more";
+        elem.innerHTML = "more";
+      } else {
+        elem.value = "less";
+        elem.innerHTML = "less";
+      }
+    }
+
+    function accessClick(id) {
+      console.log(id);
+      // var x = document.getElementById(id);
+      var x = document.getElementById("parkingLot");
+      var y = document.getElementById("entrance");
+      x.style.display = "none";
+      y.style.display = "none";
+
+      if (id.style.display === "block") {
+        id.style.display = "none";
+      } else {
+        id.style.display = "block";
+      }
+    }
+
+    function accessClick2(id) {
+      console.log(id);
+      // var x = document.getElementById(id);
+      var x = document.getElementById("interiorDoor");
+      x.style.display = "none";
+    //   y.style.display = "none";
+
+      if (id.style.display === "block") {
+        id.style.display = "none";
+      } else {
+        id.style.display = "block";
+      }
+    }
+  </script>
 </html>

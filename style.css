@@ -1,17 +1,45 @@
 header {
     text-align: center;
     margin-top: 2em;
-    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+    font-family: 'Shrikhand', cursive;
 
+
+}
+.header {
+    font-size: 100px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 30px;
 }
-.hidden {
+
+#myButton1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 2px;
+    cursor: pointer;
+    font-family: 'Jura', sans-serif;
     
-    font-family: 'Roboto', sans-serif;
+}
+#myButton1:hover {
+    background-color: white;
+    border: 1px solid #4CAF50;
+    color:  #4CAF50;
+
+}
+.hidden {
     margin: 3px 0 3px 10px;
     padding: 10px;
     margin-left: 30px;
@@ -20,9 +48,49 @@ body {
     width: 67%;
     display: none;
     font-size: 16px;
-    background-color: aliceblue;
-    border-radius: 2%;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 7px #d2d2d2;
 }
+
+
+.hidden2 {
+    margin: 3px 0 3px 10px;
+    padding: 10px;
+    margin-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    width: 67%;
+    display: none;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid;
+    box-shadow: 5px 7px #d2d2d2;
+    width: 92%;
+}
+
+.center {
+    margin: auto;
+    width: 92%;
+}
+
+.row {
+    display: flex;
+}
+
+.column1 {
+    flex: 40%;
+}
+.column2 {
+    flex: 60%;
+}
+
+#col2 {
+    margin-top: 65px;
+}
+
 p {
     font-size: 18px;
 }
@@ -31,36 +99,52 @@ p {
     margin: 10px 5px 20px 0;
 }
 
+li {
+    padding: 5px;
+}
+
 
 /* Container needed to position the button. Adjust the width as needed */
 .container {
     position: relative;
-    width: 50%;
+    width: 600px;
   }
   
   /* Make the image responsive */
   .container img {
-    width: 100%;
     height: auto;
   }
   
   /* Style the button and place it in the middle of the container/image */
   .container .btn {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: greenyellow;
-    width: 2px;
-    height: 2px;
+    background-color: rgb(255, 81, 0);
+    width: 1.5px;
+    height: 1.5px;
     color: white;
-    padding: 12px 12px;
-    border: none;
+    padding: 9px 9px;
+    border: 0.5px solid rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 12px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
   }
   
   .container .btn:hover {
-    background-color: greenyellow;
+    background-color: yellow;
   }
+
+  .container #btn1 {
+    top: 30%;
+    left: 40%;
+    
+  }
+  .container #btn2 {
+      top: 82%;
+      left: 21%;
+  }
+
+  .container #btn3 {
+    top: 82%;
+    left: 21%;
+}
