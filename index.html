@@ -13,9 +13,10 @@
   </head>
 
   <body>
-    <header>
-      <h1 class="header" style="display: inline">CHECs. For All-</h1>
-    </header>
+        <div class="top">
+            <h1 class="header" style="display: inline">CHECs. For All-</h1>
+        </div>
+     
 
     <div class="info">
       <h2 style="display: inline">What is CHECs?</h2>
@@ -69,7 +70,8 @@
           />
           <button class="btn" id="btn1" onclick="accessClick(parkingLot)"></button>
           <button class="btn" id="btn2" onclick="accessClick(entrance)"></button>
-          <button class="btn" id="btn23" onclick="accessClick(dropoff)"></button>
+          <button class="btn" id="btn21" onclick="accessClick(dropoff)"></button>
+          <button class="btn" id="btn22" onclick="accessClick(pathway)"></button>
         </div>
       </div>
       <div class="column2" id="col2">
@@ -141,6 +143,22 @@
                 Drop-off areas (cars, Paratransit, or Taxi) are as close as possible to the 
                 accessible route to entrance.
             </li>
+        </div>
+        <div class="hidden2" id="pathway">
+            <h3> Pathway</h3>
+            <li> The most accessible pathway has a stable, firm, slip-resistant surface AND is free of cracks 
+                measuring 1/4 inch or higher. 
+            </li>
+            <li> 
+                The most accessible pathway is at least 3 feet (36 inches) wide.
+            </li>
+            <li>
+                Objects posted on walls above waist level (27 inches) protrude no more than 4 inches into the 
+                pathway, AND headroom is maintained at 80 inches, AND the pathway is free of puddles, snow, 
+                dirt, and trash.
+            </li>
+
+
         </div>
       </div>
     </div>
@@ -291,11 +309,13 @@
       console.log(id);
       var x = document.getElementById("parkingLot");
       var y = document.getElementById("entrance");
+      var z = document.getElementById("pathway");
       var a = document.getElementById("dropoff");
       
 
       x.style.display = "none";
       y.style.display = "none";
+      z.style.display = "none";
       a.style.display = "none";
       
       if (id.style.display === "block") {
