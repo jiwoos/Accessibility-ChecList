@@ -113,12 +113,12 @@ li {
   }
   
   /* Make the image responsive */
-  .container img {
+.container img {
     height: auto;
-  }
+}
   
   /* Style the button and place it in the middle of the container/image */
-  .container .btn {
+.container .btn {
     position: absolute;
     background-color: rgb(255, 0, 0);
     width: 1.5px;
@@ -130,28 +130,28 @@ li {
     border-radius: 12px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-  }
+}
   
-  .container .btn:hover {
+.container .btn:hover {
     background-color: rgb(255, 244, 244);
     transition-delay: 0.1s;
-  }
+}
 
-  .container #btn1 {
+.container #btn1 {
     top: 30%;
     left: 40%;
     
-  }
-  .container #btn2 {
+}
+.container #btn2 {
       top: 80%;
       left: 21%;
-  }
-  .container #btn23 {
+}
+.container #btn23 {
     top: 86%;
     left: 21%;
 }
 
-  .container #btn3 {
+.container #btn3 {
     top: 95%;
     left: 65%;
 }
