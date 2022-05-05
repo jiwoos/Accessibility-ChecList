@@ -1,0 +1,66 @@
+header {
+    text-align: center;
+    margin-top: 2em;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 30px;
+}
+.hidden {
+    
+    font-family: 'Roboto', sans-serif;
+    margin: 3px 0 3px 10px;
+    padding: 10px;
+    margin-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    width: 67%;
+    display: none;
+    font-size: 16px;
+    background-color: aliceblue;
+    border-radius: 2%;
+}
+p {
+    font-size: 18px;
+}
+
+.info, .building-accessibility1, .building-accessibility2 {
+    margin: 10px 5px 20px 0;
+}
+
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  /* Make the image responsive */
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: greenyellow;
+    width: 2px;
+    height: 2px;
+    color: white;
+    padding: 12px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  
+  .container .btn:hover {
+    background-color: greenyellow;
+  }
